@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INSTANT JOURNAL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <section id="view-home" class="view active">
+      <header class="home-header">
+        <h1 class="logo-title">INSTANT JOURNAL</h1>
+        <p class="tagline">Search & organize academic research instantly</p>
+      </header>
+
+      <div class="search-bar-wrapper">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Search research papers, journals, authors..." 
+          autocomplete="off"
+        />
+        <button id="search-btn">SEARCH</button>
+      </div>
+
+      <nav class="nav-grid">
+        <button class="nav-card" onclick="switchView('view-favorites')">
+          <span class="card-title">FAVOURITE</span>
+        </button>
+        <button class="nav-card" onclick="switchView('view-bookmarks')">
+          <span class="card-title">BOOKMARK</span>
+        </button>
+        <button class="nav-card" onclick="switchView('view-topics')">
+          <span class="card-title">TOPICS</span>
+        </button>
+        <button class="nav-card" onclick="switchView('view-downloads')">
+          <span class="card-title">DOWNLOADS</span>
+        </button>
+      </nav>
+    </section>
+
+    <section id="view-results" class="view">
+      <header class="sub-header">
+        <h2>SEARCH RESULTS <span id="query-display"></span></h2>
+      </header>
+      <div class="results-list" id="results-list"></div>
+    </section>
+
+    <section id="view-bookmarks" class="view">
+      <header class="sub-header">
+        <h2>BOOKMARKS & SAVED PAPERS</h2>
+      </header>
+      <div class="saved-grid" id="bookmarks-list">
+        <div class="result-card">
+          <h4>Attention Is All You Need</h4>
+          <p>Ashish Vaswani et al. • 2017</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-topics" class="view">
+      <header class="sub-header">
+        <h2>EXPLORE TOPICS</h2>
+      </header>
+      <div class="topics-grid">
+        <div class="topic-card">
+          <h3>Computer Science</h3>
+          <p>AI, Machine Learning, Operating Systems</p>
+        </div>
+        <div class="topic-card">
+          <h3>Physics</h3>
+          <p>Quantum Mechanics, Astrophysics</p>
+        </div>
+        <div class="topic-card">
+          <h3>Mathematics</h3>
+          <p>Discrete Math, Graph Theory</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-downloads" class="view">
+      <header class="sub-header">
+        <h2>DOWNLOADED PAPERS</h2>
+      </header>
+      <div class="downloads-table">
+        <div class="table-header">
+          <span>TITLE</span>
+          <span>SIZE</span>
+        </div>
+        <div class="table-row">
+          <span>Deep Residual Learning for Image Recognition.pdf</span>
+          <span class="file-size">1.4 MB</span>
+        </div>
+        <div class="table-row">
+          <span>Attention Is All You Need.pdf</span>
+          <span class="file-size">840 KB</span>
+        </div>
+      </div>
+    </section>
+
+    <button id="global-back-btn" class="back-btn hidden" onclick="goHome()">
+      &larr; BACK
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
