@@ -1,0 +1,40 @@
+{
+  "journals": [
+    {
+      "id": 1,
+      "title": "Deep Residual Learning for Image Recognition",
+      "author": "Kaiming He et al.",
+      "topic": "Computer Science",
+      "year": 2016,
+      "doi": "10.1109/CVPR.2016.90",
+      "size": "1.4 MB"
+    },
+    {
+      "id": 2,
+      "title": "Attention Is All You Need",
+      "author": "Ashish Vaswani et al.",
+      "topic": "Computer Science",
+      "year": 2017,
+      "doi": "10.48550/arXiv.1706.03762",
+      "size": "840 KB"
+    },
+    {
+      "id": 3,
+      "title": "Quantum Supremacy Using a Programmable Superconducting Processor",
+      "author": "Frank Arute et al.",
+      "topic": "Physics",
+      "year": 2019,
+      "doi": "10.1038/s41586-019-1666-5",
+      "size": "2.1 MB"
+    },
+    {
+      "id": 4,
+      "title": "Graph Neural Networks: A Review of Methods and Applications",
+      "author": "Jie Zhou et al.",
+      "topic": "Mathematics",
+      "year": 2020,
+      "doi": "10.1016/j.artint.2020.103367",
+      "size": "3.0 MB"
+    }
+  ]
+}
